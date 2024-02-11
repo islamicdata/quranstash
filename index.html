@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuranStash</title>
   <style>
+    /* Common styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,65 +16,63 @@
     }
     .navbar {
       background-color: black;
-      padding: 10px; /* Adjust padding for smaller screens */
+      padding: 15px;
       text-align: center;
     }
     .navbar a {
       color: white;
       text-decoration: none;
-      margin: 0 5px; /* Adjust margin for smaller screens */
-      font-size: 14px; /* Reduce font size for smaller screens */
+      margin: 0 10px;
     }
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      padding: 0 5px; /* Adjust padding for smaller screens */
     }
     .card {
       background-color: white;
-      padding: 10px; /* Adjust padding for smaller screens */
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      max-width: 300px; /* Adjust maximum width for smaller screens */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
       text-align: center;
     }
     /* Adjust text color for better readability */
     .card p {
       color: black;
-      font-size: 12px; /* Reduce font size for smaller screens */
+      font-size: 16px;
     }
     #arabicText {
-      font-family: 'IndoPak', sans-serif; /* Specify IndoPak font */
-      font-size: 18px; /* Reduce Arabic text size for smaller screens */
-      direction: rtl; /* Right-to-left text direction */
+      font-family: 'IndoPak', sans-serif;
+      font-size: 25px;
+      direction: rtl;
     }
     @font-face {
       font-family: 'IndoPak';
-      src: url('IndoPak.woff2') format('woff2'); /* Path to the IndoPak font file */
+      src: url('IndoPak.woff2') format('woff2');
     }
     .verse-number {
       font-weight: bold;
-      font-size: 10px; /* Reduce verse number font size for smaller screens */
+      font-size: 14px;
     }
     .end-tag {
-      font-family: 'IndoPak', sans-serif; /* Apply IndoPak font */
-      font-size: 18px; /* Reduce end tag font size for smaller screens */
-      margin-right: 2px; /* Adjust margin for smaller screens */
+      font-family: 'IndoPak', sans-serif;
+      font-size: 25px;
+      margin-right: 5px;
     }
     .audio-bar {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 10px; /* Adjust margin for smaller screens */
-      border: transparent solid 5px; /* Adjust border for smaller screens */
+      margin-top: 20px;
+      border: transparent solid 10px;
     }
     .audio-bar .line {
       width: 80%;
       height: 1px;
       background-color: black;
-      margin: 0 5px; /* Adjust margin for smaller screens */
+      margin: 0 10px;
       position: relative;
     }
     .audio-bar .progress {
@@ -89,7 +88,91 @@
       border: none;
       cursor: pointer;
       outline: none;
-      font-size: 14px; /* Reduce button font size for smaller screens */
+      font-size: 24px;
+    }
+
+    /* Desktop styles */
+    @media only screen and (min-width: 768px) {
+      /* No changes needed for desktop */
+    }
+
+    /* Android styles */
+    @media only screen and (max-width: 768px) and (max-device-width: 480px) {
+      .navbar {
+        padding: 10px;
+      }
+      .navbar a {
+        font-size: 14px;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .card {
+        padding: 15px;
+        max-width: 400px;
+      }
+      .card p {
+        font-size: 14px;
+      }
+      #arabicText {
+        font-size: 20px;
+      }
+      .verse-number {
+        font-size: 12px;
+      }
+      .end-tag {
+        font-size: 20px;
+      }
+      .audio-bar {
+        margin-top: 10px;
+        border-width: 5px;
+      }
+      .audio-bar .line {
+        margin: 0 5px;
+      }
+      .audio-bar button {
+        font-size: 18px;
+      }
+    }
+
+    /* iPhone styles */
+    @media only screen and (max-width: 768px) and (max-device-width: 414px) {
+      .navbar {
+        padding: 10px;
+      }
+      .navbar a {
+        font-size: 14px;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .card {
+        padding: 15px;
+        max-width: 350px;
+      }
+      .card p {
+        font-size: 14px;
+      }
+      #arabicText {
+        font-size: 18px;
+      }
+      .verse-number {
+        font-size: 10px;
+      }
+      .end-tag {
+        font-size: 18px;
+        margin-right: 2px;
+      }
+      .audio-bar {
+        margin-top: 10px;
+        border-width: 5px;
+      }
+      .audio-bar .line {
+        margin: 0 5px;
+      }
+      .audio-bar button {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
