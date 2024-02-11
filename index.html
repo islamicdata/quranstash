@@ -28,23 +28,24 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      padding: 0 10px; /* Adjust padding for smaller screens */
     }
     .card {
       background-color: white;
-      padding: 50px;
+      padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      max-width: 700px;
+      max-width: 500px; /* Adjust maximum width for smaller screens */
       text-align: center;
     }
     /* Adjust text color for better readability */
     .card p {
       color: black;
-      font-size: 20px;
+      font-size: 16px; /* Reduce font size for smaller screens */
     }
     #arabicText {
       font-family: 'IndoPak', sans-serif; /* Specify IndoPak font */
-      font-size: 35px; /* Change Arabic text size */
+      font-size: 25px; /* Reduce Arabic text size for smaller screens */
       direction: rtl; /* Right-to-left text direction */
     }
     @font-face {
@@ -53,11 +54,11 @@
     }
     .verse-number {
       font-weight: bold;
-      font-size: 18px;
+      font-size: 14px; /* Reduce verse number font size for smaller screens */
     }
     .end-tag {
       font-family: 'IndoPak', sans-serif; /* Apply IndoPak font */
-      font-size: 35px; /* Match Arabic text size */
+      font-size: 25px; /* Reduce end tag font size for smaller screens */
       margin-right: 5px; /* Add some space between the Arabic text and the end tag */
     }
     .audio-bar {
@@ -87,17 +88,7 @@
       border: none;
       cursor: pointer;
       outline: none;
-      font-size: 24px;
-    }
-
-    /* Media Query for iPhones */
-    @media only screen and (max-width: 768px) {
-      .container {
-        padding: 0 10px; /* Adjust padding for smaller screens */
-      }
-      .card {
-        padding: 20px; /* Adjust card padding for smaller screens */
-      }
+      font-size: 18px; /* Reduce button font size for smaller screens */
     }
   </style>
 </head>
