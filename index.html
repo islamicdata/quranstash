@@ -89,6 +89,84 @@
       outline: none;
       font-size: 24px;
     }
+    /* Styles for Android devices */
+    @media only screen and (max-width: 768px) and (max-device-width: 480px) {
+      .navbar {
+        padding: 10px;
+      }
+      .navbar a {
+        font-size: 14px;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .card {
+        padding: 15px;
+        max-width: 400px;
+      }
+      .card p {
+        font-size: 14px;
+      }
+      #arabicText {
+        font-size: 20px;
+      }
+      .verse-number {
+        font-size: 12px;
+      }
+      .end-tag {
+        font-size: 20px;
+      }
+      .audio-bar {
+        margin-top: 10px;
+        border-width: 5px;
+      }
+      .audio-bar .line {
+        margin: 0 5px;
+      }
+      .audio-bar button {
+        font-size: 18px;
+      }
+    }
+
+    /* Styles for iPhone devices */
+    @media only screen and (max-width: 768px) and (max-device-width: 414px) {
+      .navbar {
+        padding: 10px;
+      }
+      .navbar a {
+        font-size: 14px;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .card {
+        padding: 15px;
+        max-width: 350px;
+      }
+      .card p {
+        font-size: 14px;
+      }
+      #arabicText {
+        font-size: 18px;
+      }
+      .verse-number {
+        font-size: 10px;
+      }
+      .end-tag {
+        font-size: 18px;
+        margin-right: 2px;
+      }
+      .audio-bar {
+        margin-top: 10px;
+        border-width: 5px;
+      }
+      .audio-bar .line {
+        margin: 0 5px;
+      }
+      .audio-bar button {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
